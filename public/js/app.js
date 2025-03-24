@@ -1,3 +1,4 @@
+
 window.addEventListener("load", () => {
   document.getElementById("page-overlay").classList.add("animate-curtainUp");
 });
@@ -7,6 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobileMenu = document.getElementById("mobile-menu");
   const iconMenu = document.getElementById("icon-menu");
   const iconClose = document.getElementById("icon-close");
+
+  curtainUp();
+
+  gsapEffects()
 
   menuBtn.addEventListener("click", function () {
     const isOpen = mobileMenu.classList.contains("scale-x-100");
@@ -43,11 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-window.addEventListener("load", () => {
-  document.getElementById("page-overlay").classList.add("animate-curtainUp");
-});
-
-document.addEventListener("DOMContentLoaded", function () {
+const gsapEffects = ()=>{
+  const isPageDev = window.location.pathname.includes("desarrollos");
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.utils.toArray(".section").forEach((section) => {
@@ -59,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
         scale: 0.7,
         scrollTrigger: {
           trigger: section,
-          start: "20% ",
+          start: isPageDev ? "40%" : "20% ",
           end: "bottom ",
           scrub: true,
         },
@@ -83,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
           opacity: 0.5,
           scrollTrigger: {
             trigger: section,
-            start: "20%",
+            start: isPageDev ? "40%" : "20% ",
             end: "bottom",
             scrub: true,
           },
@@ -91,4 +93,8 @@ document.addEventListener("DOMContentLoaded", function () {
       );
     }
   });
-});
+}
+
+const curtainUp = () => {
+  document.getElementById("page-overlay").classList.add("animate-curtainUp");
+}
