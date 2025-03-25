@@ -24,27 +24,27 @@ const buildCard = (department)=>{
       alt=""
       />
       <div class="flex flex-col gap-2">
-      <p class="text-[22px]">${department.name}</p>
-      <p class ="text-2xl text-[#D92741]">$ ${department.price} MXN</p>
+      <p class="text-[28px]">${department.name}</p>
+      <p class ="text-xl text-[#D92741]">${department.price} MXN</p>
       <p>${department.description}</p>
       <div class="flex gap-8">
         <div class="flex gap-4">
-        <img src="../assets/habitacion.svg" alt="" />
+        <img src="./assets/habitacion.svg" alt="" />
         <p>${department.rooms}</p>
         </div>
         <div class="flex gap-4">
-        <img src="../assets/bath.svg" alt="" />
+        <img src="./assets/bath.svg" alt="" />
         <p>${department.bathrooms}</p>
         </div>
         <div class="flex gap-4">
-        <img src="../assets/medidas.svg" alt="" />
+        <img src="./assets/medidas.svg" alt="" />
         <p>${department.squareMeters}</p>
         </div>
       </div>
       <div class="flex gap-3 my-6">
         <img
         class="w-[23px] h-[23px]"
-        src="../assets/localizacion.svg"
+        src="./assets/localizacion.svg"
         alt="localizacion"
         />
         <p class="text-sm w-80">${department.location}</p>
@@ -55,7 +55,7 @@ const buildCard = (department)=>{
         <div
           class="cursor-pointer w-[90%] md:max-w-[290px] border border-black/32 text-xl font-bold p-2 text-center rounded-full"
         >
-          Asesoria
+          Asesoría
         </div>
          <div
           class="flex flex-col gap-2"

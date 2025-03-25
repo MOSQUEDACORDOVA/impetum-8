@@ -1,8 +1,3 @@
-
-window.addEventListener("load", () => {
-  document.getElementById("page-overlay").classList.add("animate-curtainUp");
-});
-
 document.addEventListener("DOMContentLoaded", function () {
   const menuBtn = document.getElementById("menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
@@ -96,5 +91,8 @@ const gsapEffects = ()=>{
 }
 
 const curtainUp = () => {
-  document.getElementById("page-overlay").classList.add("animate-curtainUp");
+  const pageOverlay = document.getElementById("page-overlay");
+  if (pageOverlay) {
+    pageOverlay.classList.add("animate-curtainUp");
+  }
 }

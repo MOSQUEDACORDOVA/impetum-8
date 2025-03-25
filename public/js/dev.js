@@ -23,22 +23,22 @@ const createDynamicCards = ()=>{
       <p class="text-[22px]">${department.name}</p>
       <div class="flex gap-8">
         <div class="flex gap-4">
-        <img src="../assets/habitacion.svg" alt="" />
+        <img src="./assets/habitacion.svg" alt="" />
         <p>${department.rooms}</p>
         </div>
         <div class="flex gap-4">
-        <img src="../assets/bath.svg" alt="" />
+        <img src="./assets/bath.svg" alt="" />
         <p>${department.bathrooms}</p>
         </div>
         <div class="flex gap-4">
-        <img src="../assets/medidas.svg" alt="" />
+        <img src="./assets/medidas.svg" alt="" />
         <p>${department.squareMeters}</p>
         </div>
       </div>
       <div class="flex gap-3 mt-6">
         <img
         class="w-[23px] h-[23px]"
-        src="../assets/localizacion.svg"
+        src="./assets/localizacion.svg"
         alt="localizacion"
         />
         <p>${department.location}</p>

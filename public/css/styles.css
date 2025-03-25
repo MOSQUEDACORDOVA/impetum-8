@@ -12,7 +12,57 @@
   transform: scale(1.1);
   z-index: 2;
 }
-
+.etiqueta_preventa{
+  position: relative;
+}
+.etiqueta_preventa::before{
+  content: 'Preventa';
+  font-size: 12px;
+  background-color: #D92741;
+  padding: 2px 8px;
+  border: 1px solid #ffffff3a;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  color: white;
+  border-radius: var(--radius-md);
+}
+.etiqueta_venta{
+  position: relative;
+}
+.etiqueta_venta::before{
+  content: 'En Venta';
+  font-size: 12px;
+  background-color: #27d9b5;
+  padding: 2px 8px;
+  border: 1px solid #ffffff3a;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  border-radius: var(--radius-md);
+}
+.etiqueta_vendido{
+  position: relative;
+}
+.etiqueta_vendido::before{
+  content: 'Vendido';
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2px 8px;
+  border: 1px solid #ffffff;
+  display: block;
+  font-size: 12px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  color: white;
+  border-radius: var(--radius-md);
+}
 @keyframes curtainUp {
   0% {
     transform: translateY(0%);
@@ -59,7 +109,13 @@
 .animate-curtainUp {
   animation: curtainUp 1.5s ease-in-out forwards;
 }
-
+.btn-asesoria{
+  width: 64px;
+  height: 64px;
+  right: 16px;
+  bottom: 16px;
+  position: fixed;
+}
 @keyframes curtainUp {
   0% {
     transform: translateY(0);

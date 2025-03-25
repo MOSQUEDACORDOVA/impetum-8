@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desarrollos</title>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,27 +14,18 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="./js/componentesVarios.js"></script>
   </head>
   <body class="font-[Poppins] h-full">
     <nav class="w-full fixed top-0 z-50 shadow-sm bg-white">
       <div class="max-w-6xl mx-auto px-4">
         <div class="flex justify-between items-center h-16">
-          <a href="../index.html">
-            <img class="w-36 md:w-54" src="../assets/logo.svg" alt="" />
+          <a href="./index.html">
+            <img class="w-36 md:w-54" src="./assets/logo.svg" alt="" />
           </a>
 
-          <div class="hidden md:flex justify-end w-full">
-            <div
-              class="flex gap-0 lg:gap-1 items-center w-auto text-md text-gray-900 font-small"
-            >
-              <a href="./desarrollos.html" class="hover:text-red-600 px-3 py-2"
-                >Desarrollos</a
-              >
-              <a href="#" class="hover:text-red-600 px-3 py-2">Impetum</a>
-              <a href="#" class="hover:text-red-600 px-3 py-2">Agentes</a>
-              <a href="#" class="hover:text-red-600 px-3 py-2">Asesoría</a>
-            </div>
-          </div>
+          <div class="hidden md:flex justify-end w-full" id="itemsMenuEscritorio"></div>
 
           <div class="md:hidden">
             <button
@@ -79,7 +70,7 @@
           class="flex z-60 bg-white flex-col justify-between p-8 items-start h-full gap-6 text-xl font-medium text-gray-900"
         >
           <div class="flex items-center gap-11">
-            <img class="w-4/5" src="../assets/logo.svg" alt="logo" />
+            <img class="w-4/5" src="./assets/logo.svg" alt="logo" />
             <button
               id="menu-btn"
               class="cursor-pointer rounded-md text-gray-700 hover:text-red-600 hover:bg-gray-100"
@@ -102,70 +93,51 @@
             </button>
           </div>
 
-          <div class="flex flex-col text-xl gap-8">
-            <a href="./desarrollos.html" class="hover:text-red-600 px-3 py-2"
-              >Desarrollos</a
-            >
-            <a href="#" class="hover:text-red-600 px-3 py-2">Impetum</a>
-            <a href="#" class="hover:text-red-600 px-3 py-2">Agentes</a>
-            <a href="#" class="hover:text-red-600 px-3 py-2">Asesoría</a>
-          </div>
-          <div class="flex flex-col w-full gap-8">
-            <div class="flex gap-9 justify-center">
-              <img src="../assets/youtube-black.svg" alt="" />
-              <img src="../assets/instagram-black.svg" alt="" />
-              <img src="../assets/linkedin-black.svg" alt="" />
-            </div>
-            <button
-              class="w-full flex justify-center gap-4 cursor-pointer bg-white py-3 px-6 rounded-full border border-black/32"
-            >
-              <img src="../assets/help.svg" alt="" />
-              Asesoria
-            </button>
-          </div>
+          <div class="flex flex-col text-xl gap-8" id="itemsMenuMovil"></div>
+          
+          <div class="flex flex-col w-full gap-8" id="itemsRedesMenuMovil"></div>
         </div>
       </div>
     </nav>
 
-    <div
-      class="w-full section z-4 flex flex-col justify-evenly h-full pt-16 pb-10"
-    >
-      <div class="overlay h-full"></div>
-      <div
-        id="details"
-        class="w-full flex flex-col items-center justify-center  mt-8 "
-      >
+    <main class="section z-4 flex flex-col justify-evenly h-full pt-20 pb-10">
+      <div class="h-full"></div>
+      <div class="flex flex-col items-center justify-center gap-8">
+        <div class="flex flex-col text-center">
+          <h1 class="text-4xl font-medium">Desarrollos</h1>
+          <p class="text-xl">Falta el Texto descriptivo de esta sección.</p>
+        </div>
+        <div id="cards-container" class="flex flex-wrap items-center justify-center gap-8">
+        </div>
       </div>
-    </div>
+    </main>
 
     <footer
       class="section z-6 mb-20 sm:mb-0 flex flex-col gap-13 sm:gap-8 items-center bg-black py-24 md:py-12"
     >
       <img
         class="w-2/3 sm:w-1/2 md:w-1/3"
-        src="../assets/logo-footer.svg"
+        src="./assets/logo-footer.svg"
         alt="logo"
       />
       <div
         class="flex flex-col sm:flex-row gap-8 text-xl text-white text-center"
       >
-        <a class="hover:text-red-600" href="./desarrollos.html">
-          Desarrollos
-        </a>
-        <a class="hover:text-red-600" href="#"> Impetum </a>
+        <a class="hover:text-red-600" href="#"> Desarrollos </a>
+        <a class="hover:text-red-600" href="./impetum.html"> Impetum </a>
         <a class="hover:text-red-600" href=""> Agentes </a>
         <a class="hover:text-red-600" href=""> Asesoría </a>
       </div>
       <div class="flex gap-8 justify-center">
-        <img src="../assets/youtube.svg" alt="" />
-        <img src="../assets/linkedin.svg" alt="" />
-        <img src="../assets/instagram.svg" alt="" />
+        <img src="./assets/youtube.svg" alt="" />
+        <img src="./assets/linkedin.svg" alt="" />
+        <img src="./assets/instagram.svg" alt="" />
       </div>
       <button
         class="flex justify-center gap-4 cursor-pointer bg-white py-3 px-6 rounded-full w-1/2 sm:w-auto"
       >
-        <img src="../assets/help.svg" alt="" />
-        Asesoria
+        <img src="./assets/help.svg" alt="" />
+        Asesoría
       </button>
     </footer>
     <div
@@ -174,23 +146,18 @@
       <div
         class="flex justify-start gap-4 items-center text-2xl rounded-full border border-black/32 px-8 w-full max-w-[340px] sm:hidden"
       >
-        <img class="w-9 h-9" src="../assets/city.svg" alt="desarrollos" />
+        <img class="w-9 h-9" src="./assets/city.svg" alt="desarrollos" />
         <p>Desarrollos</p>
       </div>
       <div
         class="cursor-pointer sm:fixed z-50 bg-white bottom-4 sm:bottom-8 flex justify-center items-center border border-black/32 p-2 rounded-full"
       >
-        <img class="h-9 w-9" src="../assets/help.svg" alt="help" />
+        <img class="h-9 w-9" src="./assets/help.svg" alt="help" />
       </div>
     </div>
-    <div
-      id="page-overlay"
-      class="flex justify-end items-end p-16 fixed top-0 left-0 w-full h-full bg-black z-[9999]"
-    >
-      <img class="w-1/2 sm:w-1/3" src="../assets/logo-footer.svg" alt="" />
-    </div>
+    
 
-    <script type="module" src="../js/app.js"></script>
-    <script type="module" src="../js/details.js"></script>
+    <script src="./js/app.js"></script> 
+    <script type="module" src="./js/dev.js?v=2"></script>
   </body>
 </html>
