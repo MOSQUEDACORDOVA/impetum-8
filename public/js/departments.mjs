@@ -10,6 +10,11 @@ export const departments = [
         <br><br> 📅 Agenda tu cita hoy mismo y sé parte de la experiencia Piombo 24.
         <br><br>📩 Contáctanos para más información.`,
       image: "./assets/priombo1.jpg",
+      otherImages: [
+        "./assets/terraza.png",
+        "./assets/interior.png",
+        "./assets/exterior.png",
+      ],
       rooms: 2,
       bathrooms: 2,
       squareMeters: "Desde 54.66m²",
@@ -37,6 +42,11 @@ export const departments = [
       <br><br>
       📩 Contáctanos para más información.`,
       image: "./assets/tenispreview.png",
+      otherImages: [
+        "./assets/terraza.png",
+        "./assets/interior.png",
+        "./assets/exterior.png",
+      ],
       rooms: 2,
       bathrooms: 2,
       squareMeters: "Desde 76m²",
@@ -61,6 +71,11 @@ export const departments = [
       <br><br>
       Este desarrollo representó una excelente oportunidad de inversión y calidad de vida en una ubicación estratégica.`,
       image: "./assets/azabachepreview.jpg",
+      otherImages: [
+        "./assets/terraza.png",
+        "./assets/interior.png",
+        "./assets/exterior.png",
+      ],
       rooms: "1+",
       bathrooms: "1+",
       squareMeters: "Desde 42m²",
