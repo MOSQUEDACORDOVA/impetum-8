@@ -42,7 +42,7 @@ const buildCard = (department)=>{
       src="${department.image}"
       alt="department.name"
       />
-        <img id="openGallery" class="cursor-pointer z-50 absolute w-5 h-5 absolute bottom-2 right-2" src="./assets/expand.svg" alt="expand" />
+        <img id="openGallery" class="cursor-pointer z-50 absolute h-8 absolute bottom-2 right-2" src="./assets/expand.svg" alt="expand" />
       </div>
       
       <div class="w-full md:w-1/2 flex flex-col gap-4 justify-center">
