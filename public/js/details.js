@@ -75,7 +75,7 @@ const buildCard = (department)=>{
         class="flex flex-col gap-8 font-medium  border-black/32"
       >
         ${department.etiqueta !== "etiqueta_vendido" ? `
-        <a href="https://api.whatsapp.com/send?phone=5215624033930&text=Hola%20amigos%20de%20Impetum,%20me%20gustaría%20más%20información%20acerca%20de%20${encodeURIComponent(department.name)}"
+        <a href="https://api.whatsapp.com/send?phone=525624033930&text=Hola%20amigos%20de%20Impetum,%20me%20gustaría%20más%20información%20acerca%20de%20${encodeURIComponent(department.name)}"
           class="cursor-pointer md:w-[90%] md:max-w-[290px] border border-black/32 text-xl font-bold p-2 text-center rounded-full"
           target="_blank"
         >

@@ -49,7 +49,7 @@ const createDynamicCards = () => {
 
       <div 
         class="flex justify-evenly font-medium border-t border-black/32">
-          ${department.actions.want ? `<a href="https://api.whatsapp.com/send?phone=5215624033930&text=Hola%20amigos%20de%20Impetum,%20me%20gustaría%20más%20información%20acerca%20de%20${encodeURIComponent(department.name)}" class="p-2">${department.actions.want}</a><p class="border-l border-black/32"></p>` : ""}
+          ${department.actions.want ? `<a href="https://api.whatsapp.com/send?phone=525624033930&text=Hola%20amigos%20de%20Impetum,%20me%20gustaría%20más%20información%20acerca%20de%20${encodeURIComponent(department.name)}" class="p-2">${department.actions.want}</a><p class="border-l border-black/32"></p>` : ""}
           <a href="detalle.html?id=${department.id}" class="p-2">${department.actions.details}</a>
       </div>
     `;
