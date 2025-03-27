@@ -2,13 +2,15 @@ export const departments = [
     {
       id: 1,
       name: "Piombo 24",
-      price:"Desde 3,100,000.00",
+      price:"Desde 3,400,000.00",
       description:`Invierte en Piombo 24 y asegura tu futuro con una propiedad de alto valor.`,
       details:"Detalles",
       largeDescription:`
-        🏡 Preventa de departamentos con entrega programada para abril de 2026.✨ Solo 15 exclusivos departamentos de 2 recámaras y 2 baños completos, totalmente equipados.
-        <br><br> 📅 Agenda tu cita hoy mismo y sé parte de la experiencia Piombo 24.
-        <br><br>📩 Contáctanos para más información.`,
+      Descubre nuestra preventa en una ubicación privilegiada y alta plusvalía. 
+      <br>
+      Exclusivos 15 departamentos totalmente equipados. 
+      <br>
+      Entregamos en Abril 2026.`,
       image: "./assets/priombo1.jpg",
       otherImages: [
         "./assets/piombo/piombophoto1.jpg",
@@ -31,7 +33,7 @@ export const departments = [
       ],
       rooms: 2,
       bathrooms: 2,
-      squareMeters: "Desde 54.66m²",
+      squareMeters: "Desde 65m²",
       location: "FALTA DIRECIÓN",
       actions: {
         want: "Lo quiero",
@@ -42,7 +44,7 @@ export const departments = [
     {
       id: 2,
       name: "Tenis 55",
-      price:"17,900,000",
+      price:"3,900,000.00",
       description:"🏡 Elige Tenis 55 y asegura tu inversión con un retorno óptimo.",
       details:"Detalles",
       largeDescription:`

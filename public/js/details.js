@@ -96,27 +96,30 @@ const buildCard = (department)=>{
 
 const buildGallery = (otherImages) => {
   const gallery = document.getElementById("gallery");
-
+  
   gallery.classList.remove("hidden");
-
   gallery.style.visibility = "hidden";
   gallery.style.position = "absolute";
   gallery.style.width = "1px";
   gallery.style.height = "1px";
   gallery.style.overflow = "hidden";
-
+  
   gallery.innerHTML = "";
-
+  
   otherImages.forEach((image, index) => {
     const link = document.createElement("a");
     link.href = image;
-    link.dataset.pswpWidth = "2500";
-    link.dataset.pswpHeight = "1875";
-
+    const tempImg = new Image();
+    tempImg.onload = function() {
+      link.dataset.pswpWidth = this.width;
+      link.dataset.pswpHeight = this.height;
+    };
+    tempImg.src = image;
+    
     const img = document.createElement("img");
     img.src = image;
     img.alt = `Imagen ${index + 1}`;
-
+    
     link.appendChild(img);
     gallery.appendChild(link);
   });

@@ -20,7 +20,7 @@
 }
 .etiqueta_preventa::before{
   content: 'Preventa';
-  font-size: 12px;
+  font-size: 16px;
   background-color: #D92741;
   padding: 2px 8px;
   border: 1px solid #ffffff3a;
@@ -37,8 +37,8 @@
 }
 .etiqueta_venta::before{
   content: 'En Venta';
-  font-size: 12px;
-  background-color: #27d9b5;
+  font-size: 16px;
+  background-color: #D92741;
   padding: 2px 8px;
   border: 1px solid #ffffff3a;
   display: block;
@@ -46,7 +46,7 @@
   top: 20px;
   left: 20px;
   z-index: 1;
-  color: rgb(0, 0, 0);
+  color: white;
   border-radius: var(--radius-md);
 }
 .etiqueta_vendido{
@@ -54,11 +54,11 @@
 }
 .etiqueta_vendido::before{
   content: 'Vendido';
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #D92741;
   padding: 2px 8px;
-  border: 1px solid #ffffff;
+  border: 1px solid #ffffff3a;
   display: block;
-  font-size: 12px;
+  font-size: 16px;
   position: absolute;
   top: 20px;
   left: 20px;
