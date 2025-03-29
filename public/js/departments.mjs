@@ -34,7 +34,7 @@ export const departments = [
       rooms: 2,
       bathrooms: 2,
       squareMeters: "Desde 65m²",
-      location: "FALTA DIRECIÓN",
+      location: "Sebastián del Piombo 24, Nonoalco, Benito Juárez, 03700 Ciudad de México, CDMX, México",
       actions: {
         want: "Lo quiero",
         details: "Ver detalles"
